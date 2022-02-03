@@ -1,7 +1,6 @@
 // Helpers
 type NEq<A, B> = Eq<A, B> extends true ? false : true
 type IsFalse<A extends false> = A
-type Prove<A> = Extract<A, true>
 
 // From number define structure
 type Tuplify<L extends number, T extends any[] = []> =
